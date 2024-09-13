@@ -21,9 +21,9 @@ public class Aritmetica {
     }
     
     public int sumaConArgumentos(int arg1, int arg2){
-        a = arg1;
-        b = arg2;
+        this.a = arg1;//El argumento a se asigna al atributo this.a
+        this.b = arg2;//Se usa para diferenciar los atributos por argumnetos aunque tenga el mismo nombre
         //return  a + b;
-        return sumarConRetorno();//solo se hacen con metodos de la misma clase No RECOMENDABLE
+        return this.sumarConRetorno();//solo se hacen con metodos de la misma clase No RECOMENDABLE
     }
 }
