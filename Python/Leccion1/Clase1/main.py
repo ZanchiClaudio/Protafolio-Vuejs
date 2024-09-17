@@ -115,7 +115,7 @@ print("\n", cocina)
 #del cocina
 #print(cocina)
 
-
+################################################################
 ##Tipo set (conjuntos) No presenta indices
 
 planetas = {"Martes", "Jupiter", "Venus"}
@@ -236,3 +236,127 @@ print(4 in tupla) #devuelve un tipo boolean
 print("hola" not in tupla)
 #lo que podemos usar dentro de tuplas son: index, count, len
 #se pueden convertir de tuplas a listas y viseversa
+
+#Repaso de set o conjunto
+#Para definir un conjunto
+#En un conjunto hay valores unicos.
+conjunto2= set() #Es la unica forma de iniciarlo vacio
+conjunto1 = {"bye",} #no permite añadirle nada,para que se pueda, hay que iniciarlo con un valor adentro
+conjunto2.add(7)
+conjunto2.add("hola")
+print(conjunto2)
+conjunto1.add("Hola")
+print (conjunto1)
+print(3 not in conjunto1) #Pregunta si el 3 esta en el conjunto.Devuelve un boolean
+
+#Como hacer la igualdad de dos conjuntos
+print(conjunto1 == conjunto2) #Nos devielve un booleano
+
+#Operaciones con los conjuntos
+#Union de conjuntos
+conjunto3 = conjunto1 | conjunto2 #La linea une los dos conjuntos
+print(conjunto3)
+#comparacion de elementos en comun
+conjunto3 = conjunto1 & conjunto2
+print(conjunto3)
+
+#mostrar los elementos que estan en uno pero no en el dos
+conjunto3 = conjunto2 - conjunto1
+print(conjunto3)
+
+#Elementos que estan en los dos, pero no son compartidos entre ambos
+conjunto3 = conjunto1 ^ conjunto2
+print(conjunto3)
+
+#determinacion si un conjunto es un subconjunto de otro
+conjunto3 = conjunto1 | conjunto2
+print(conjunto1.issubset(conjunto3)) #comprobacon boleana
+print(conjunto2.issubset(conjunto3))
+print(conjunto3.issubset(conjunto1))
+print(conjunto3.issubset(conjunto2))
+
+##Comprobar si un conjunto tiene los elementos del otro
+print(conjunto3.issuperset(conjunto1))
+print(conjunto3.issuperset(conjunto2))
+print(conjunto2.issuperset(conjunto3))
+print(conjunto1.issuperset(conjunto3))
+
+#Como saber que son disconexos (no comparten ningun elemento en comun)
+print(conjunto1.isdisjoint(conjunto2))
+
+##convertir un conjunto en totalmente inmutable
+conjunto1 = frozenset #lo vuelve inmutable
+#no permite modificar, agregar ni eliminar elementos del conjunto
+
+##Repasos de diccionario
+diccionarioNuevo = {'azul':'blue', 'rojo':'red', 'verde': 'green', 'amarillo': 'yellow' }
+print(diccionarioNuevo)
+
+#como eliminar
+del (diccionarioNuevo['azul'])
+print(diccionarioNuevo)
+
+#los diccionarios pueden almacenar diferentes tipos de datos
+diccionario2 = {'Claudio':{'edad':28 , 'altura':1.68}, 'Esteban': [28,1.57], 'Florencia': [25,1.72]}
+print(diccionario2)
+
+##Ejercicio de la sellecion
+seleccionArgentina = {
+    10: {'Nombre': 'Lionel Messi', 'Edad': 35, 'Altura': 1.70,'Precio': '50millones', 'Posicion': 'Extremo Derecho'},
+    11: {'Nombre': 'Angel Di Maria', 'Edad': 34, 'Altura': 1.80,'Precio': '12millones', 'Posicion': 'Extremo Derecho'},
+    24: {'Nombre': 'Paulo Dybala', 'Edad': 28, 'Altura': 1.77,'Precio': '35millones', 'Posicion': 'Media punta'},
+    19: {'Nombre': 'Nicolas Otamendi', 'Edad': 34, 'Altura': 1.83,'Precio': '3.5millones', 'Posicion': 'Defensor central'},
+    1: {'Nombre': 'Franco Armani', 'Edad': 35, 'Altura': 1.89,'Precio': '3.5millones', 'Posicion': 'Arquero'},
+    8: {'Nombre': 'Marcos Acuña', 'Edad': 32, 'Altura': 1.65,'Precio': '4millones', 'Posicion': 'Lateral Izquerdo'},
+    5: {'Nombre': 'Leandro Paredes', 'Edad': 30, 'Altura': 1.71,'Precio': '8millones', 'Posicion': 'Pivote'},
+    13: {'Nombre': 'Cristian Romero', 'Edad': 26, 'Altura': 1.73,'Precio': '65millones', 'Posicion': 'Defensor central'},
+    23: {'Nombre': 'Emiliano Martinez', 'Edad': 32, 'Altura': 1.95,'Precio': '28millones', 'Posicion': 'Arquero'}
+}
+
+print(seleccionArgentina[10])
+print(seleccionArgentina.values())##muestra solo los valores
+
+for llaves in seleccionArgentina.keys():
+    print(llaves)
+for valor in seleccionArgentina.values():
+    print(valor)
+for llaves, valor in seleccionArgentina.items():
+    print(llaves , valor)
+print('Tenemos cargados en el diccionario la cantidad de jugadores: ', end=' ')
+print(len(seleccionArgentina))
+
+##Metodo Pilas se utiliza en las lista
+pila = [1,2,3]
+
+#Agregamos elementos a la pila por el final
+pila.append(4)
+pila.append(5)
+print(pila)
+##Sacando elementos por el final
+elementoBorrado = pila.pop() ##Este metodo saca y retorna el ultimo elemento de la lista
+print('Sacamso el elemento:',{elementoBorrado},'y la pila quedo asi: ' )
+print(pila)
+
+##colas de las listas
+#son estructuras de tipo FIFO, first input / first output
+cola = ['Claudio', 'Esteban', 'Florencia', 'Mikaela']
+#agregamos elementos al final de la cola
+cola.append('Jose')
+cola.append('Natalia')
+print(cola)
+##Sacamos elementos de la cola
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
