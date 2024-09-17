@@ -304,7 +304,7 @@ print(diccionario2)
 seleccionArgentina = {
     10: {'Nombre': 'Lionel Messi', 'Edad': 35, 'Altura': 1.70,'Precio': '50millones', 'Posicion': 'Extremo Derecho'},
     11: {'Nombre': 'Angel Di Maria', 'Edad': 34, 'Altura': 1.80,'Precio': '12millones', 'Posicion': 'Extremo Derecho'},
-    24: {'Nombre': 'Paulo Dybala', 'Edad': 28, 'Altura': 1.77,'Precio': '35millones', 'Posicion': 'Media punta'},
+    21: {'Nombre': 'Paulo Dybala', 'Edad': 28, 'Altura': 1.77,'Precio': '35millones', 'Posicion': 'Media punta'},
     19: {'Nombre': 'Nicolas Otamendi', 'Edad': 34, 'Altura': 1.83,'Precio': '3.5millones', 'Posicion': 'Defensor central'},
     1: {'Nombre': 'Franco Armani', 'Edad': 35, 'Altura': 1.89,'Precio': '3.5millones', 'Posicion': 'Arquero'},
     8: {'Nombre': 'Marcos Acuña', 'Edad': 32, 'Altura': 1.65,'Precio': '4millones', 'Posicion': 'Lateral Izquerdo'},
@@ -360,3 +360,9 @@ print(cola)
 seRetira = cola.pop(0)
 print(f'Atendido el cliente: {seRetira}')
 print(cola)
+
+######################################################################################
+#Clse4.5
+for i in seleccionArgentina:
+    print(f'{i} -> {seleccionArgentina[i]}')
+##muestras las llaves y cada valor del diccionario
