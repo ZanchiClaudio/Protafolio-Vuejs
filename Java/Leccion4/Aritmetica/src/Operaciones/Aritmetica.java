@@ -13,8 +13,8 @@ public class Aritmetica {
     }
     //Estamso viendo lo que se llama sobrecarga de constructores
     public  Aritmetica(int a, int b){ //constructor 2
-        this.a = a;
-        this.b = b;
+        this.a = a; //es ara que el compilador diferencie entre el atribito con la variable, si no se pone el this 
+        this.b = b; //la variavle tiene que tener un nuobre distinto
         System.out.println("Se esta ejecutando el constructor numero 2");
     }
     

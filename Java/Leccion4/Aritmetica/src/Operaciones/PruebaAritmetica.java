@@ -26,11 +26,40 @@ public class PruebaAritmetica {
         System.out.println("aritmetica2 = " + aritmetica2.b);
         //aritmetica1 = null; //No utilizar, limpia el objeto, lo hace automaticamente
         //System.gc();//Recolector de basura, es inecesario dado que es muy pesado
-        
+        Persona persona = new Persona("Caludio", "Zanchi");
+        System.out.println("persona = " + persona);
+        System.out.println("Persona nombre: "+persona.nombre);
+        System.out.println("Persona apellido: "+persona.apellido);
     }
+    //Modularidad creamos un nuevo metodo
     public static void miMetodo(){
         //a = 10; tira error si no se inicializa 
         System.out.println("Aqui hay otro metodo");
     }
         
+}
+
+//creamos una nueva clase
+//solo puede creear una sola clase public, las demas van a ser como defaul o package
+class Persona{ //lo coloca automaticamente al modificador de acceso, no es necesario agregar ninguno
+    String nombre;
+    String apellido;
+    
+    Persona(String nombre, String apellido){ //constructor
+        super();//constructor vacio, es de la clase Padre object. Lo hace automaticamente sin necesidad de agregarlo. Si se lo agrega hay que hacerlo al principio
+        this.nombre = nombre;
+        this.apellido = apellido;
+        System.out.println("Objeto persona usando this: "+this);
+    }
+
+class Imprimir{
+    public Imprimir(){
+        super(); //el constructor fr la clase padre, para reservar memoria
+    }
+    
+    public void imprimir(Persona persona){
+        System.out.println("Persona desde la calse imprimir: "+ persona);
+        System.out.println("Impresion del objeto actual (this): "+this);
+    }
+    }
 }
