@@ -7,6 +7,17 @@ public class Aritmetica {
     int a; 
     int b;
     
+    //El constructor es un metodo especial(construye un objeto, guarda un lucar en memoria e inicializa los metodos
+    public Aritmetica(){ //cosntructor 1
+        System.out.println("Se esta ejecutando el constructor numero 1");
+    }
+    //Estamso viendo lo que se llama sobrecarga de constructores
+    public  Aritmetica(int a, int b){ //constructor 2
+        this.a = a;
+        this.b = b;
+        System.out.println("Se esta ejecutando el constructor numero 2");
+    }
+    
     //Metodos
     public void sumarNumero(){ //el retorno es vacio
         //cuerpo de la clase, las variables aqui son locales. 
