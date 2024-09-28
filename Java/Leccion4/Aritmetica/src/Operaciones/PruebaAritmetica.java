@@ -46,7 +46,9 @@ class Persona{ //lo coloca automaticamente al modificador de acceso, no es neces
     String apellido;
     
     Persona(String nombre, String apellido){ //constructor
-        super();//constructor vacio, es de la clase Padre object. Lo hace automaticamente sin necesidad de agregarlo. Si se lo agrega hay que hacerlo al principio
+        //super();//constructor vacio, es de la clase Padre object. Lo hace automaticamente sin necesidad de agregarlo. Si se lo agrega hay que hacerlo al principio
+        //Imprimir imprimir = new Imprimir(); //se puede acceder por que estan todos dentro de la miama estructura
+        new Imprimir().imprimir(this);
         this.nombre = nombre;
         this.apellido = apellido;
         System.out.println("Objeto persona usando this: "+this);
