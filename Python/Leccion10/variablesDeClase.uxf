@@ -1,0 +1,15 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>90</x><y>70</y><w>210</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Persona&gt;&gt;
+--
+-nombre: str
+-edad: int
+--
+mostrar_detalle()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>350</y><w>210</w><h>70</h></coordinates><panel_attributes>&lt;&lt;persona1: Persona&gt;&gt;
+--
+-nombre: str = "Claudio"
+-edad: int = 29</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>350</y><w>210</w><h>70</h></coordinates><panel_attributes>&lt;&lt;persona2: Persona&gt;&gt;
+--
+-nombre: str = "Victoria"
+-edad: int = 25</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>150</y><w>100</w><h>220</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;10;200</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>270</y><w>100</w><h>100</h></coordinates><panel_attributes>lt=.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>260</y><w>330</w><h>40</h></coordinates><panel_attributes>lt=.
+</panel_attributes><additional_attributes>310;20;10;20</additional_attributes></element></diagram>
