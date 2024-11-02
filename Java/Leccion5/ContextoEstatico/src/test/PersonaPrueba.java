@@ -24,7 +24,7 @@ public class PersonaPrueba {
         System.out.println("persona = " + persona);
     }
     
-    public int getContador(){
+    public int getContador(){ //creacion de un objeto para pasar a contexto dinamico que puede entrer al estatico
         imprimir(new Persona("Liliana"));
         return this.contador;
         
