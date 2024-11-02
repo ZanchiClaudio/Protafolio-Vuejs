@@ -11,5 +11,5 @@
 -nombre: str
 -presio: float
 --
-+__str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>120</y><w>220</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;.
-&lt;&lt;aggregates&gt;&gt;</panel_attributes><additional_attributes>10;20;192;16</additional_attributes></element></diagram>
++__str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>120</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;.
+&lt;&lt;aggregates&gt;&gt;</panel_attributes><additional_attributes>10;20;202;16</additional_attributes></element></diagram>
