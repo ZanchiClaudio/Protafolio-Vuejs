@@ -26,7 +26,7 @@ public class Aritmetica {
         
     }
     
-    public int sumarConRetorno(){ //retorna un int
+    public int sumarConRetorno(){ //retorna un int   
         int resultado = a + b;
         return resultado;
     }

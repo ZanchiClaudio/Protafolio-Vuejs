@@ -4,6 +4,7 @@ package dominio;
 
 public class Persona {
     //atributos
+    //String nombre; si no le ponemos el modificador lo toma como defaul o packeges no public
     private String nombre;//Encapsulados
     private double sueldo;
     private boolean eliminado;
@@ -40,5 +41,11 @@ public class Persona {
         this.eliminado = eliminado;
     }
     
+    public String toString(){ //convierte en una cadena cada atributo
+        return "Persona [ nombre: " + this.nombre + 
+                ", Sueldo: " + this.sueldo +
+                ", Eliminado: "+ this.eliminado + "]";
+        
+    }
     
 }
