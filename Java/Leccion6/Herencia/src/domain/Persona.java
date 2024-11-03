@@ -10,6 +10,7 @@ public class Persona {
     protected String direccion;
     
     //Constructor vacio: este es para crear objetos sin necesidad de inicializar los atributos de la clase
+    //aqui se da una sobrecarga de constructores ya que tienen el mismo nombre
     public Persona(){ //Constructor 1
         
     }

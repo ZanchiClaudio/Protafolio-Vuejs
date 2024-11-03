@@ -9,11 +9,20 @@ public class Empleado extends Persona { //con extends indeica que la clase emple
     private static int contadorEmpleados; //para hacer el incremento
     
     //Generamos el constructor
-    public Empleado(String nombre, double sueldo) {
-        super(nombre);
+    public Empleado(){ //constructor 1
         this.idEmpleado = ++Empleado.contadorEmpleados;
+    }
+    
+    public Empleado(String nombre, double sueldo) { //Constructor 2
+        //super(nombre); //se usa el super o la llamada del constructor interno, no los dos. 
+        //this.idEmpleado = ++Empleado.contadorEmpleados;
+        this();//llamamos a un constructor interno
+        this.nombre = nombre; //Accedemos al atributo de la clase padre
         this.sueldo = sueldo;
     }
+    
+    
+    
     // metodos get and set
     public int getIdEmpleado() {
         return this.idEmpleado;
