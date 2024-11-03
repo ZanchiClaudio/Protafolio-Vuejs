@@ -1,17 +1,17 @@
-<diagram program="umletino" version="15.1"><zoom_level>3</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>282</x><y>54</y><w>63</w><h>33</h></coordinates><panel_attributes>&lt;&lt;Ahorcado&gt;&gt;
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>711</x><y>0</y><w>189</w><h>99</h></coordinates><panel_attributes>&lt;&lt;Ahorcado&gt;&gt;
 --
 +main(args: String[ ]): void
 --
 Responsabilidades
 -Ejecutar el juego, llamando las demas
-clases </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>414</x><y>417</y><w>81</w><h>45</h></coordinates><panel_attributes>&lt;&lt;Intentos&gt;&gt;
+clases </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1107</x><y>1089</y><w>243</w><h>135</h></coordinates><panel_attributes>&lt;&lt;Intentos&gt;&gt;
 --
 +Intentos(intentos: Juego): void
 --
 Responsabilidades
 -- Mostrar las animaciones en funcion 
 a la cantidad de intentos que queden
-en el Juego</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>54</x><y>174</y><w>96</w><h>45</h></coordinates><panel_attributes>&lt;&lt;MenuSolitario&gt;&gt;
+en el Juego</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>27</x><y>360</y><w>288</w><h>135</h></coordinates><panel_attributes>&lt;&lt;MenuSolitario&gt;&gt;
 --
 +aux: int
 --
@@ -19,7 +19,7 @@ en el Juego</panel_attributes><additional_attributes></additional_attributes></e
 --
 Responsabilidades
 -- Mostrar el menu, guardar opcion elejida luego de la
-comprobacion y retornar opcionSolidadio como entero</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>414</x><y>240</y><w>81</w><h>45</h></coordinates><panel_attributes>&lt;&lt;Matriz&gt;&gt;
+comprobacion y retornar opcionSolidadio como entero</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1107</x><y>558</y><w>243</w><h>135</h></coordinates><panel_attributes>&lt;&lt;Matriz&gt;&gt;
 --
 +palabra: object
 --
@@ -28,7 +28,7 @@ comprobacion y retornar opcionSolidadio como entero</panel_attributes><additiona
 
 Responsabilidades
 -- Crear las palabras como objetos, o objetos con todas las 
-palabras, y retornar la matriz</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>54</x><y>231</y><w>96</w><h>45</h></coordinates><panel_attributes>&lt;&lt;MenuModoJuego&gt;&gt;
+palabras, y retornar la matriz</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>27</x><y>531</y><w>288</w><h>135</h></coordinates><panel_attributes>&lt;&lt;MenuModoJuego&gt;&gt;
 --
 +aux: int
 --
@@ -36,7 +36,7 @@ palabras, y retornar la matriz</panel_attributes><additional_attributes></additi
 --
 Responsabilidades
 -- Mostrar el menu, guardar opcion elejida luego de la
-comprobacion y retornar modoJuego como entero</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>54</x><y>285</y><w>96</w><h>45</h></coordinates><panel_attributes>&lt;&lt;MenuModoCompetencia&gt;&gt;
+comprobacion y retornar modoJuego como entero</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>27</x><y>693</y><w>288</w><h>135</h></coordinates><panel_attributes>&lt;&lt;MenuModoCompetencia&gt;&gt;
 --
 +aux: int
 --
@@ -44,7 +44,7 @@ comprobacion y retornar modoJuego como entero</panel_attributes><additional_attr
 --
 Responsabilidades
 -- Mostrar el menu, guardar opcion elejida luego de la
-comprobacion y retornar competencia como entero</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>51</x><y>342</y><w>96</w><h>45</h></coordinates><panel_attributes>&lt;&lt;MenuNombreJugadores&gt;&gt;
+comprobacion y retornar competencia como entero</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>18</x><y>864</y><w>288</w><h>135</h></coordinates><panel_attributes>&lt;&lt;MenuNombreJugadores&gt;&gt;
 --
 +nombre1: String
 +nombre2:String
@@ -55,7 +55,7 @@ comprobacion y retornar competencia como entero</panel_attributes><additional_at
 --
 Responsabilidades
 -- Mostrar el menu, guardar los nombres elejidos
- y retornar nombre1 y nombre2 como "Object"</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>51</x><y>399</y><w>96</w><h>45</h></coordinates><panel_attributes>&lt;&lt;MenuModoTradicional&gt;&gt;
+ y retornar nombre1 y nombre2 como "Object"</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>18</x><y>1035</y><w>288</w><h>135</h></coordinates><panel_attributes>&lt;&lt;MenuModoTradicional&gt;&gt;
 --
 +aux: int
 --
@@ -64,7 +64,7 @@ Responsabilidades
 Responsabilidades
 -- Mostrar el menu, guardar opcion elejida luego de la
 comprobacion y retornar opcionTradicional
- como entero</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>405</x><y>171</y><w>96</w><h>57</h></coordinates><panel_attributes>&lt;&lt;ParametrosJuego&gt;&gt;
+ como entero</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1080</x><y>351</y><w>288</w><h>171</h></coordinates><panel_attributes>&lt;&lt;ParametrosJuego&gt;&gt;
 --
 +palabra: String
 +nombre1
@@ -76,7 +76,7 @@ comprobacion y retornar opcionTradicional
 Responsabilidades
 -- Llamar los menus en funcion a la opciones
 que se eligen, guardar , en funcion de la 
-eleccion, la palabra e intentos como los nombres</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>411</x><y>297</y><w>96</w><h>45</h></coordinates><panel_attributes>&lt;&lt;Ayudin&gt;&gt;
+eleccion, la palabra e intentos como los nombres</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1098</x><y>729</y><w>288</w><h>135</h></coordinates><panel_attributes>&lt;&lt;Ayudin&gt;&gt;
 --
 +palabraUsuario: Array
 --
@@ -85,13 +85,13 @@ eleccion, la palabra e intentos como los nombres</panel_attributes><additional_a
 Responsabilidades
 -- Mostrar un menu, gurdar la opcion y en funcion de
 ella, completar una de las letras del arreglo palabra
-y retornar el arreglo</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>408</x><y>357</y><w>96</w><h>45</h></coordinates><panel_attributes>&lt;&lt;Juego&gt;&gt;
+y retornar el arreglo</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1089</x><y>909</y><w>288</w><h>135</h></coordinates><panel_attributes>&lt;&lt;Juego&gt;&gt;
 --
 +Juego(): 
 --
 Responsabilidades
 -- Utiliza la informacion de las demas para hacer
-funcionar el juego</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>228</x><y>270</y><w>96</w><h>45</h></coordinates><panel_attributes>&lt;&lt;NuevaPalabra&gt;&gt;
+funcionar el juego</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>549</x><y>648</y><w>288</w><h>135</h></coordinates><panel_attributes>&lt;&lt;NuevaPalabra&gt;&gt;
 --
 +palabra: Array
 --
@@ -99,17 +99,17 @@ funcionar el juego</panel_attributes><additional_attributes></additional_attribu
 --
 Responsabilidades
 -- Elejir de manera aleatoria una nueva palabra
-para la opcion de 2 jugadores</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>228</x><y>327</y><w>96</w><h>45</h></coordinates><panel_attributes>&lt;&lt;Ganador&gt;&gt;
+para la opcion de 2 jugadores</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>549</x><y>819</y><w>288</w><h>135</h></coordinates><panel_attributes>&lt;&lt;Ganador&gt;&gt;
 --
 +Ganador(): 
 --
 Responsabilidades
 -- Mostarr el nombre del ganador o si 
-hay empate en modo de 2 jugadores</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>309</x><y>84</y><w>9</w><h>39</h></coordinates><panel_attributes>lt=&lt;.
-</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>45</x><y>162</y><w>123</w><h>297</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>45</x><y>147</y><w>30</w><h>15</h></coordinates><panel_attributes>Menus</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>216</x><y>249</y><w>123</w><h>150</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>216</x><y>240</y><w>30</w><h>9</h></coordinates><panel_attributes>Opcion 2 jugadores</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>393</x><y>153</y><w>123</w><h>330</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>393</x><y>144</y><w>30</w><h>9</h></coordinates><panel_attributes>Parametros del Juego</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>165</x><y>306</y><w>57</w><h>12</h></coordinates><panel_attributes>lt=&lt;.&gt;
-</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>339</x><y>306</y><w>60</w><h>12</h></coordinates><panel_attributes>lt=&lt;.&gt;
-</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>84</x><y>108</y><w>369</w><h>15</h></coordinates><panel_attributes>lt=.
-</panel_attributes><additional_attributes>10;20;1210;30</additional_attributes></element><element><id>Relation</id><coordinates><x>84</x><y>114</y><w>9</w><h>51</h></coordinates><panel_attributes>lt=&lt;.
-</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>114</y><w>9</w><h>141</h></coordinates><panel_attributes>lt=&lt;.
-</panel_attributes><additional_attributes>10;10;10;450</additional_attributes></element><element><id>Relation</id><coordinates><x>438</x><y>114</y><w>9</w><h>45</h></coordinates><panel_attributes>lt=&lt;.
+hay empate en modo de 2 jugadores</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>792</x><y>90</y><w>27</w><h>117</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>324</y><w>369</w><h>891</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>279</y><w>90</w><h>45</h></coordinates><panel_attributes>Menus</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>513</x><y>585</y><w>369</w><h>450</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>513</x><y>558</y><w>108</w><h>27</h></coordinates><panel_attributes>Opcion 2 jugadores</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1044</x><y>297</y><w>369</w><h>990</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1044</x><y>270</y><w>126</w><h>27</h></coordinates><panel_attributes>Parametros del Juego</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>756</y><w>171</w><h>36</h></coordinates><panel_attributes>lt=&lt;.&gt;
+</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>873</x><y>747</y><w>189</w><h>45</h></coordinates><panel_attributes>lt=&lt;.&gt;
+</panel_attributes><additional_attributes>190;30;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>117</x><y>162</y><w>1107</w><h>45</h></coordinates><panel_attributes>lt=.
+</panel_attributes><additional_attributes>10;20;1210;30</additional_attributes></element><element><id>Relation</id><coordinates><x>117</x><y>180</y><w>27</w><h>153</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>675</x><y>180</y><w>27</w><h>423</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;10;10;450</additional_attributes></element><element><id>Relation</id><coordinates><x>1179</x><y>180</y><w>27</w><h>135</h></coordinates><panel_attributes>lt=&lt;.
 </panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element></diagram>
