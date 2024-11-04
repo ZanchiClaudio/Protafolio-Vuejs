@@ -5,6 +5,10 @@ para que funcione el juego
 package ar.com.codesystem.juego;
 
 
+
 public class Ahorcado {
+    public static void main(String[] args) {
+       // Juego();
+    }
     
 }
