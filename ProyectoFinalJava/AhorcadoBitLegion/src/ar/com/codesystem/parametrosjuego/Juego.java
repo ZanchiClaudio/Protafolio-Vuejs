@@ -9,23 +9,28 @@ import java.util.Scanner;
 public class Juego {
     public static void main(String[] args){
         String palabraUsuario[] = new String [20];
-        int intentos = 5, longPalabra = 0, cont,eleccion;
+        int intentos = 5, longPalabra = 0, cont, eleccion;
         String  palabra, a;
         char letraSubCadena;//letraIngresada;
         boolean aciertos = false;
     
-    
+        //llamado de la matriz para la selacion de la palabra
+        Matriz matriz1 = new Matriz();
+        palabra = matriz1.MatrizJuego(0, 8);
     //public Juego(){
         Scanner entrada = new Scanner(System.in);
         //inicializo el arreglo
-        palabra = "ARBOL";
+        //palabra = "ARBOL";
         for (int i = 0; i < palabra.length(); i++) {
             palabraUsuario[i] = "_ ";
         }
+        
+        Intentos animacion = new Intentos(); //creacion del objeto animacion para mostrar el viejo
+        
         //juego
         while(intentos>0 && aciertos==false){
             System.out.println("Intentos restantes: " + intentos );
-            //animacion(intentos)
+            animacion.Intento(intentos);
             System.out.println("Palabra");
             for (int i = 0; i < palabra.length(); i++) {
                 System.out.print(palabraUsuario[i]);
@@ -33,8 +38,10 @@ public class Juego {
             System.out.println();
             //leer letra ingresada ppor el usuario
             if(intentos == 3 ){
-                eleccion = 0;
+                //eleccion = 0;
                 //Ayudin(palabra,palabraUsuario,eleccion)
+                Ayudin ayudin1 = new Ayudin();
+                eleccion = ayudin1.Ayuda(palabraUsuario,palabra);
                 if(eleccion == 1){
                     intentos -= 2;
                 }

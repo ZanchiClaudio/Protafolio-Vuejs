@@ -10,9 +10,11 @@ public class PruebaAritmetica {
         Aritmetica aritmetica1 = new Aritmetica();
         aritmetica1.a = 3;
         aritmetica1.b = 7;
+        System.out.println("sumamama ");
         aritmetica1.sumarNumero();//llama al metodo del archivo aritmetica
          //para almacenar un objeto o atributos se utiliza la mamoria heap
-        int resultado = aritmetica1.sumarConRetorno();
+        System.out.println("sumamama ");
+         int resultado = aritmetica1.sumarConRetorno();
         System.out.println("resultado = " + resultado);
         
         resultado = aritmetica1.sumaConArgumentos(12, 26);
