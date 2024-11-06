@@ -6,7 +6,7 @@ package ar.com.codesystem.parametrosjuego;
 
 public class Intentos {
     
-    int intentoss;
+    //int intentoss;
     
     public void Intento(int intentoss) {
     
@@ -35,6 +35,6 @@ public class Intentos {
                 System.out.println("1000000000000000000000");
                 break;
             }
-    }
+        }
     }
 }

@@ -7,20 +7,21 @@ import java.util.Scanner;
 
 
 public class Juego {
-    public static void main(String[] args){
+    
         String palabraUsuario[] = new String [20];
         int intentos = 5, longPalabra = 0, cont, eleccion;
         String  palabra, a;
         char letraSubCadena;//letraIngresada;
-        boolean aciertos = false;
-    
+        String aciertos = "false";
+        
+        
+    public String JuegoAhorcado (String palabra){ 
         //llamado de la matriz para la selacion de la palabra
-        Matriz matriz1 = new Matriz();
-        palabra = matriz1.MatrizJuego(0, 8);
+        //Matriz matriz1 = new Matriz();
+        //palabra = matriz1.MatrizJuego(0, 8);
     //public Juego(){
         Scanner entrada = new Scanner(System.in);
         //inicializo el arreglo
-        //palabra = "ARBOL";
         for (int i = 0; i < palabra.length(); i++) {
             palabraUsuario[i] = "_ ";
         }
@@ -28,7 +29,7 @@ public class Juego {
         Intentos animacion = new Intentos(); //creacion del objeto animacion para mostrar el viejo
         
         //juego
-        while(intentos>0 && aciertos==false){
+        while(intentos>0 && aciertos=="false"){
             System.out.println("Intentos restantes: " + intentos );
             animacion.Intento(intentos);
             System.out.println("Palabra");
@@ -49,17 +50,17 @@ public class Juego {
             System.out.println("Ingrese una letra: ");
             String letraIngresada = entrada.nextLine();
             letraIngresada = letraIngresada.toUpperCase();
-            aciertos = false;
+            aciertos = "false";
             
             for (int i = 0; i < palabra.length(); i++) {
                 letraSubCadena = palabra.charAt(i);
                 if(letraIngresada.charAt(0) == letraSubCadena){
                     palabraUsuario[i] = letraIngresada;
-                    aciertos = true;
+                    aciertos = "true";
                 }
             }
             //descontamos los intentos
-            if(aciertos == false){
+            if(aciertos == "false"){
                 intentos -= 1;
             }
             //Aumento el contador para determinar si todas las letras del arreglo forman la palabra
@@ -85,22 +86,22 @@ public class Juego {
                 System.out.println("$           ¡¡Felicidades!!             $");
                 System.out.println("$   Has adivinado la palabra secreta    $");
                 System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
-                aciertos = true;
+                aciertos = "true";
             }
             else{
-                aciertos = false;
+                aciertos = "false";
             }
         }
         
         //se muestra la palabra al perder
-        if(aciertos == false){
+        if(aciertos == "false"){
             //animacion(0)
             System.out.println("******************************************");
             System.out.println("*             Has perdido                *");
             System.out.println("*  La palabra secreta era:"+palabra+"    *");
             System.out.println("******************************************");
         }
-        
+    return aciertos;    
     }
     
     

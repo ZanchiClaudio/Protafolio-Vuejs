@@ -25,8 +25,11 @@ public class MenuModoTradicional {
             System.out.println("|        4- Palabra personalizada      |");
             System.out.println("---------------------------------------");
             eleccionMod = entrada.nextLine();
+            System.out.println("eleccionMod = " + eleccionMod);
             
         }while(eleccionMod == "1" || eleccionMod == "2" || eleccionMod == "3" || eleccionMod == "4");
+        
+        System.out.println("eleccionMod no sale= " + eleccionMod);
         
         int eleccion_modo_tradicional = Integer.parseInt(eleccionMod);
         
