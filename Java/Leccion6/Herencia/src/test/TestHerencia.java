@@ -5,12 +5,19 @@ import domain.Cliente;
 import domain.Empleado;
 import domain.Persona;
 import java.util.Date;
+import javax.swing.JOptionPane;
 
 
 public class TestHerencia {
     public static void main(String[] args) {
         Empleado empleado1 = new Empleado("Claudio", 57000.00); //los constructores se heredan
         System.out.println("empleado1 = " + empleado1);
+        
+        
+        JOptionPane.showMessageDialog(null, "asfwfwefvw3 \n hshshshshs");
+        JOptionPane.showInputDialog(null,"yo");
+        
+        JOptionPane.showMessageDialog(null, "asfwfwefvw3 \n hshshshshs");
         
 //        Date fecha1 = new Date();
 //        

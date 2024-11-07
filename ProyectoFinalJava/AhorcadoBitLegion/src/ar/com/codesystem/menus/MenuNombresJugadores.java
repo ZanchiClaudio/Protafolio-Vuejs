@@ -11,7 +11,7 @@ public class MenuNombresJugadores {
     
     String nombres[] = new String[2] ;
     
-    public String[] MenuModJuego(){
+    public String[] NombresJugadores(){
        
         Scanner entrada = new Scanner (System.in);
    

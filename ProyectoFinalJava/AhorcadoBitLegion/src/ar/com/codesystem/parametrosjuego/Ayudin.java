@@ -7,10 +7,10 @@ import java.util.Scanner;
 
 
 public class Ayudin {
-   String eleccion1;
+   char eleccion1;
    int eleccion;
    String letra = "_ ", palabraAyudin[] = new String [20];
-   
+   boolean comp;
     
     public Integer Ayuda(String palabraUsuario[], String palabra){
         Scanner entrada = new Scanner(System.in);
@@ -24,11 +24,19 @@ public class Ayudin {
             System.out.println("|              ¿Quieres?               |");
             System.out.println("|      1-SI                2-NO        |");
             System.out.println("---------------------------------------");
-            eleccion1 = entrada.nextLine();
-            
-        }while(eleccion1 == "1" || eleccion1 == "2");
+            eleccion1 = entrada.nextLine().charAt(0);
+            if(eleccion1 == '1'){
+                comp = false;
+            }
+            else if(eleccion1 == '2'){
+                comp = false;
+            }
+            else{
+                comp = true;
+            }  
+        }while(comp);
         
-        eleccion = Integer.parseInt(eleccion1);
+        int eleccion = Character.getNumericValue(eleccion1);
         if (eleccion == 1){
             System.out.println("11111111");
             for (int i = 0; i < palabraUsuario.length - 1; i++) {

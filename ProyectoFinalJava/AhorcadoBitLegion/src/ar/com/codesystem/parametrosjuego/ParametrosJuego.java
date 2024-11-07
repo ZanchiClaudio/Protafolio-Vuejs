@@ -62,14 +62,6 @@ public class ParametrosJuego {
                                         intentos_competencia = "1";
                                         break;
                                     }
-                                    default:{
-                                        do{
-                                        System.out.println("Ingreso Incorrecto");
-                                        eleccion = Integer.parseInt(entrada.nextLine());
-                                            System.out.println("eleccion = " + eleccion);
-                                        intentos_competencia = "1";
-                                        }while(eleccion != 1 || eleccion != 2 || eleccion != 3 || eleccion != 4 );
-                                    }
                                 }
                                 break;
                             }
@@ -96,7 +88,7 @@ public class ParametrosJuego {
                 }
                 case 2:{
                     MenuNombresJugadores nombre_jugadores = new MenuNombresJugadores();
-                    nombres = nombre_jugadores.NombreJugadores();
+                    nombres = nombre_jugadores.NombresJugadores();
                     MenuCompetencia menu_competencia = new MenuCompetencia();
                     eleccion = menu_competencia.MenuComp();
                     switch(eleccion){
@@ -108,7 +100,7 @@ public class ParametrosJuego {
                             intentos_competencia = "5";
                             break;
                         }
-                    }    
+                    } break;   
                 }
                 case 3:{
                     intentos_competencia = "0";
@@ -125,7 +117,6 @@ public class ParametrosJuego {
             parametros[1] = nombres[1];
             parametros[2] = palabra;
             parametros[3] = intentos_competencia;
-           
            
             
             return parametros;

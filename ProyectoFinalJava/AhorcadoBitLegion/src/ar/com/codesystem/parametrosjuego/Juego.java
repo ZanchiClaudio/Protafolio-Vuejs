@@ -16,10 +16,6 @@ public class Juego {
         
         
     public String JuegoAhorcado (String palabra){ 
-        //llamado de la matriz para la selacion de la palabra
-        //Matriz matriz1 = new Matriz();
-        //palabra = matriz1.MatrizJuego(0, 8);
-    //public Juego(){
         Scanner entrada = new Scanner(System.in);
         //inicializo el arreglo
         for (int i = 0; i < palabra.length(); i++) {
@@ -39,8 +35,6 @@ public class Juego {
             System.out.println();
             //leer letra ingresada ppor el usuario
             if(intentos == 3 ){
-                //eleccion = 0;
-                //Ayudin(palabra,palabraUsuario,eleccion)
                 Ayudin ayudin1 = new Ayudin();
                 eleccion = ayudin1.Ayuda(palabraUsuario,palabra);
                 if(eleccion == 1){
@@ -49,6 +43,10 @@ public class Juego {
             }
             System.out.println("Ingrese una letra: ");
             String letraIngresada = entrada.nextLine();
+            while(letraIngresada == ""){
+                System.out.println("Ingrese una letra");
+                letraIngresada = entrada.nextLine();
+            }
             letraIngresada = letraIngresada.toUpperCase();
             aciertos = "false";
             
@@ -81,7 +79,7 @@ public class Juego {
                     System.out.print(palabraUsuario[i]);
                 }
                 System.out.println();
-                //animacion(7)
+                animacion.Intento(7);
                 System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
                 System.out.println("$           ¡¡Felicidades!!             $");
                 System.out.println("$   Has adivinado la palabra secreta    $");
@@ -95,7 +93,7 @@ public class Juego {
         
         //se muestra la palabra al perder
         if(aciertos == "false"){
-            //animacion(0)
+            animacion.Intento(6);
             System.out.println("******************************************");
             System.out.println("*             Has perdido                *");
             System.out.println("*  La palabra secreta era:"+palabra+"    *");

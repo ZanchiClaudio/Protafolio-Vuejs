@@ -23,7 +23,6 @@ public class Ahorcado {
         nombre2 = parametros[1];
         palabra = parametros[2];
         intentos_competencia = Integer.parseInt(parametros[3]);
-        
         if(intentos_competencia == 1){
            Juego juego1 = new Juego();
            aciertos = juego1.JuegoAhorcado(palabra);
@@ -37,7 +36,6 @@ public class Ahorcado {
                 col  = (int) Math.floor(Math.random()*15);
                 fil  = (int) Math.floor(Math.random()*7);
                 palabra = palabra1.MatrizJuego(fil, col);
-                //System.out.println("palabra = " + palabra);
                 System.out.println("Turno del jugador: "+nombre1);
                 System.out.println("Ronda:"+ intentos_competencia);
                 Juego juego2 = new Juego();
@@ -50,11 +48,11 @@ public class Ahorcado {
                 col  = (int) Math.floor(Math.random()*15);
                 fil  = (int) Math.floor(Math.random()*7);
                 palabra = palabra2.MatrizJuego(fil, col);
-                //System.out.println("palabra = " + palabra);
-                System.out.println("Turno del jugador: "+nombre1);
+                System.out.println("Turno del jugador: "+nombre2);
                 System.out.println("Ronda:"+ intentos_competencia);
                 Juego juego3 = new Juego();
-                aciertos = juego2.JuegoAhorcado(palabra);
+                aciertos = juego3.JuegoAhorcado(palabra);
+                
                 if(aciertos == "true"){
                     ganados_jugador1 += 1;
                 }
