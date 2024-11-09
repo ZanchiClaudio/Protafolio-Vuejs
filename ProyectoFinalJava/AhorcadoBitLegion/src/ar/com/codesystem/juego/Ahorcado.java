@@ -5,8 +5,9 @@ para que funcione el juego
 package ar.com.codesystem.juego;
 
 import ar.com.codesystem.parametrosjuego.*;
-import ar.com.codesystem.menus.*;
 import ar.com.codesystem.opcion2jugadores.*;
+
+
 
 
 public class Ahorcado {
@@ -15,8 +16,8 @@ public class Ahorcado {
         String nombre1, nombre2, palabra, aciertos;
         String[] parametros = new String[4];
         int intentos_competencia, fil, col, ganados_jugador1 = 0,gandos_jugador2 = 0;
-        
-        
+      
+                
         ParametrosJuego parametros1 = new ParametrosJuego();
         parametros = parametros1.ParametrosDelJuego();
         nombre1 = parametros[0];
@@ -58,6 +59,11 @@ public class Ahorcado {
                 }
                 intentos_competencia -= 1;
             }
+            for (int i = 0; i < 70; i++) {
+                System.out.println();   
+            }
+            Intentos intentofinal = new Intentos();
+            intentofinal.Intento(7);
             Ganador ganador = new Ganador();
             ganador.MenuGanador(nombre1, nombre2, ganados_jugador1, gandos_jugador2);
         }

@@ -17,12 +17,12 @@ public class Ganador {
         if(ganados_jugador1 > ganados_jugador2){
             System.out.println("---------------------------------------");
             System.out.println("|         El ganador es:              |");
-            System.out.println("|      "+ nombre1 +"               |");
+            System.out.println("|         "+ nombre1 +"               |");
             System.out.println("---------------------------------------");
         }else if(ganados_jugador1 < ganados_jugador2){
             System.out.println("---------------------------------------");
             System.out.println("|         El ganador es:              |");
-            System.out.println("|      "+ nombre2 +"               |");
+            System.out.println("|         "+ nombre2 +"               |");
             System.out.println("---------------------------------------");
         }else{
             System.out.println("---------------------------------------");

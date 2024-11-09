@@ -15,13 +15,12 @@ public class MenuCompetencia {
         Scanner entrada = new Scanner (System.in);
         
         do{
-            System.out.println("---------------------------------------");
-            System.out.println("|          Modo Competitivo            |");
-            System.out.println("|                                      |");
-            System.out.println("|   Seleccione la candidad de rondas   |");
-            System.out.println("|        1- El mejor de 3              |");
-            System.out.println("|        2- El mejor de 5              |");
-            System.out.println("---------------------------------------");
+            System.out.println("================================================================ ");    
+            System.out.println("|                 Modo competitivo              ./(       )\\.   |");  
+            System.out.println("|       Seleccione a cuantas rondas jugaran     )  \\/\\_/\\/      |");  
+            System.out.println("|         1- El mejor de 3                      `)  (^Y^)  (`   |");  
+            System.out.println("|         2- El mejor de 5                       `),-(~)-,(`    |");  
+            System.out.println("================================================================ ");
             eleccionComp1 = entrada.nextLine();
             
         }while(eleccionComp1 == "1" || eleccionComp1 == "2");

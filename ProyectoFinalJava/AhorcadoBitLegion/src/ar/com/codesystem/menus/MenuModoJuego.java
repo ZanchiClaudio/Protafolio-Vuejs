@@ -14,14 +14,14 @@ public class MenuModoJuego {
      Scanner entrada = new Scanner (System.in);
         
         do{
-            System.out.println("---------------------------------------");
-            System.out.println("|        Ahorcado BitLegion            |");
-            System.out.println("|                                  O   |");
-            System.out.println("|     Seleccione modo de juego   --|   |");
-            System.out.println("|        1- Un jugador          |  |   |");
-            System.out.println("|        2- Dos jugadores         | |  |");
-            System.out.println("|        3- Salir                      |");
-            System.out.println("---------------------------------------");
+            System.out.println("=====================================================================");  
+            System.out.println("|    __^__       Bienvenidos al Ahorcado BitLegion       __^__      |");  
+            System.out.println("|   ( ___ )                                             ( ___ )     |");  
+            System.out.println("|    | / |    Seleccione al modo de juego        O       | / |      |");  
+            System.out.println("|    | / |    1- Un jugador                     /|\\      | / |      |");  
+            System.out.println("|    |___|    2- Dos jugadores                   |       |___|      |");  
+            System.out.println("|   (_____)   3- Salir                          / \\     (_____)     |");  
+            System.out.println("=====================================================================");
             eleccionMod = entrada.nextLine();
             
         }while(eleccionMod == "1" || eleccionMod == "2" || eleccionMod == "3");

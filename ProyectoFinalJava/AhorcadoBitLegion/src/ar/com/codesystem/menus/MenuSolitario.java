@@ -17,13 +17,13 @@ public class MenuSolitario {
      Scanner entrada = new Scanner (System.in);
         
         do{
-            System.out.println("---------------------------------------");
+            System.out.println("=======================================");
             System.out.println("|Seleccione la tematica de la palabra |");
             System.out.println("|                                     |");
             System.out.println("|        1- Clasica                   |");
             System.out.println("|        2- Matematica                |");
             System.out.println("|        3- Informatica               |");
-            System.out.println("---------------------------------------");
+            System.out.println("=======================================");
             eleccionMod = entrada.nextLine();
             
         }while(eleccionMod == "1" || eleccionMod == "2" || eleccionMod == "3");

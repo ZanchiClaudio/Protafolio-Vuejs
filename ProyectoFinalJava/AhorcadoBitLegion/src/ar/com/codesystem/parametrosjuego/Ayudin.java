@@ -38,7 +38,6 @@ public class Ayudin {
         
         int eleccion = Character.getNumericValue(eleccion1);
         if (eleccion == 1){
-            System.out.println("11111111");
             for (int i = 0; i < palabraUsuario.length - 1; i++) {
                 if(palabraUsuario[i] == "_ " & letra == "_ "){
                     letra = palabraAyudin[i];

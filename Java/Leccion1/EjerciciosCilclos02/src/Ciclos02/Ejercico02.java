@@ -22,6 +22,17 @@ public class Ejercico02 {
             System.out.println("Digite otro numero");
             numero = Integer.parseInt(entrada.nextLine());
         }
+     
         System.out.println("El numero" + numero + " finaliza el programa");
+        
+        String cadena = "a";
+        String cadena1 = "b";
+        String cadena2= "c";
+        String cadena3 = "d";
+        String cadena4 = "e";
+        String cadena5 = "y";
+        
+        String union = cadena + cadena1;
+        System.out.println("union = " + union);
     }
 }
